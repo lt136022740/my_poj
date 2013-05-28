@@ -1,0 +1,1 @@
+package com.szkk.system;import com.szkk.data.User;public class ApplicationManager {	private final static ApplicationManager instance = new ApplicationManager();	public User currentUser;		private ApplicationManager(){			}		public static ApplicationManager sharedManager(){		return instance;	}	}

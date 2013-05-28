@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@drawable/list_item" 
+    >
+         <RelativeLayout
+            android:id="@+id/layout_banners"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@drawable/activity_main_banner"
+            >
+            <TextView
+                android:id="@+id/title_tview"
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:gravity="center"
+                android:text="咨询管理"  
+                android:textColor="@android:color/white"
+                android:textSize="22px"
+                android:layout_centerHorizontal="true"
+                 />
+                  <RelativeLayout
+			            android:id="@+id/layout_consult_manager_banner"
+			            android:layout_width="480px"
+			            android:layout_height="40px"
+			            android:layout_below="@id/title_tview"
+			            >
+			            <TextView
+			                android:id="@+id/num"
+			                android:layout_width="70px"
+			                android:layout_height="40px"
+			                android:layout_marginLeft="15px"
+			                android:gravity="center"
+			                android:text="编号"  
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/kk_acount_tview"
+			                android:layout_width="80px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/num"
+			                android:gravity="center"
+			                android:text="康客账号"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/name_tview"
+			                android:layout_width="60px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/kk_acount_tview"
+			                android:gravity="center"
+			                android:text="姓名"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/content_tview"
+			                android:layout_width="120px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/name_tview"
+			                android:gravity="center"
+			                android:text="内容"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/date_tview"
+			                android:layout_width="120px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/content_tview"
+			                android:gravity="center"
+			                android:text="日期"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			        </RelativeLayout>
+			
+			        <RelativeLayout
+			            android:id="@+id/layout_complain_manager_banner"
+			            android:layout_width="480px"
+			            android:layout_height="40px"
+			            android:layout_below="@id/title_tview"
+			             >
+			
+			            <TextView
+			                android:id="@+id/complain_num"
+			                android:layout_width="70px"
+			                android:layout_height="40px"
+			                android:layout_marginLeft="15px"
+			                android:gravity="center"
+			                android:text="编号"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/complain_kk_acount_tview"
+			                android:layout_width="80px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/complain_num"
+			                android:gravity="center"
+			                android:text="康客"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/complain_name_tview"
+			                android:layout_width="60px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/complain_kk_acount_tview"
+			                android:gravity="center"
+			                android:text="姓名"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			            <TextView
+			                android:id="@+id/complain_content_tview"
+			                android:layout_width="120px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/complain_name_tview"
+			                android:gravity="center"
+			                android:text="内容"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			
+			            <TextView
+			                android:id="@+id/complain_date_tview"
+			                android:layout_width="120px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/complain_content_tview"
+			                android:gravity="center"
+			                android:text="日期"
+			                android:textColor="@color/ff9900"
+			                android:textSize="18px" />
+			        </RelativeLayout>
+			
+			        <RelativeLayout
+			            android:id="@+id/layout_notification_manager_banner"
+			            android:layout_width="480px"
+			            android:layout_height="40px" 
+			            android:layout_below="@id/title_tview"
+			            >
+			
+			            <TextView
+			                android:id="@+id/notification_num"
+			                android:layout_width="60px"
+			                android:layout_height="40px"
+			                android:gravity="center"
+			                android:text="编号"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_title_tview"
+			                android:layout_width="80px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_num"
+			                android:gravity="center"
+			                android:text="标题"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_content_tview"
+			                android:layout_width="80px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_title_tview"
+			                android:gravity="center"
+			                android:text="内容"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_date_tview"
+			                android:layout_width="80px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_content_tview"
+			                android:gravity="center"
+			                android:text="日期"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_catalog_tview"
+			                android:layout_width="40px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_date_tview"
+			                android:gravity="center"
+			                android:text="类型"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_receiver_tview"
+			                android:layout_width="70px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_catalog_tview"
+			                android:gravity="center"
+			                android:text="收件人"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			
+			            <TextView
+			                android:id="@+id/notification_sender_tview"
+			                android:layout_width="70px"
+			                android:layout_height="40px"
+			                android:layout_toRightOf="@id/notification_receiver_tview"
+			                android:gravity="center"
+			                android:text="发布者"
+			                android:textColor="@color/ff9900"
+			                android:textSize="16px" />
+			        </RelativeLayout>
+        </RelativeLayout>
+         <RelativeLayout
+            android:id="@+id/layout_list"
+            android:layout_width="fill_parent"  
+            android:layout_height="650px"
+            android:layout_below="@id/layout_banners"
+            android:layout_centerHorizontal="true" >
+
+            <ListView
+                android:id="@+id/lisview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:layout_marginTop="15px"
+                android:divider="@null"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:layout_below="@id/layout_list" 
+            >
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="150px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="搜    索"
+                android:textColor="@color/black"
+                android:textSize="20px" />
+        </RelativeLayout> 
+    </RelativeLayout>

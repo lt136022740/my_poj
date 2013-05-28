@@ -1,0 +1,1 @@
+package com.szkk.system;public enum KKListByType {	KKLIST_ALL(0), KKLIST_HANDLED(1), KKLIST_ANALYSED(3), KKLIST_NOT_ANALYSED(4);	private int value;	KKListByType(int value) {		this.value = value;	}	public int value() {		return this.value;	}}

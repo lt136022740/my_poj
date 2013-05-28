@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@drawable/common_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/register_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/auth_iconimgview"
+                android:layout_width="127px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15px"
+                android:background="@drawable/soft_icon"
+                />
+            <TextView
+                android:id="@+id/auth_name_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="35px"
+                android:layout_below="@id/auth_iconimgview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15px"
+                android:text="手道客"
+                android:textColor="@color/black"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/auth_vertion_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_name_tview_value"
+                android:text="软件版本: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_vertion_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_name_tview_value"
+                android:layout_toRightOf="@id/auth_vertion_tview"
+                android:layout_marginLeft="20px"
+                android:text="2013.10.10"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_update_time_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_vertion_tview_value"
+                android:text="升级日期: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_update_time_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_vertion_tview_value"
+                android:layout_toRightOf="@id/auth_update_time_tview"
+                android:text="2013.10.10"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20px"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_authorize_to_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_update_time_tview_value"
+                android:text="授  权  于: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_authorize_to_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_update_time_tview_value"
+                android:layout_toRightOf="@id/auth_authorize_to_tview"
+                android:text="某人"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_account_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_authorize_to_tview_value"
+                android:text="康客帐号: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_account_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_authorize_to_tview_value"
+                android:layout_toRightOf="@id/auth_account_tview"
+                android:text="89327489"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20px"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_role_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_account_tview_value"
+                android:text="会员级别: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_role_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_account_tview_value"
+                android:layout_toRightOf="@id/auth_role_tview"
+                android:layout_marginLeft="20px"
+                android:text="金手会员"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_manager_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_role_tview_value"
+                android:text="康客管理: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_manager_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_role_tview_value"
+                android:layout_toRightOf="@id/auth_manager_tview"
+                android:layout_marginLeft="20px"
+                android:text="尚未分配"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_developer_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_manager_tview_value"
+                android:text="研发单位: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_develoerer_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_manager_tview_value"
+                android:layout_toRightOf="@id/auth_developer_tview"
+                android:text="乐吧游戏"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_official_website_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_develoerer_tview_value"
+                android:text="官方网站: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_official_website_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_marginLeft="20px"
+                android:layout_below="@id/auth_develoerer_tview_value"
+                android:layout_toRightOf="@id/auth_official_website_tview"
+                android:autoLink="all"
+                android:text="www.hdkk.org"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_tech_suppor_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_official_website_tview_value"
+                android:text="技术支持: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_tech_suppor_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_official_website_tview_value"
+                android:layout_toRightOf="@id/auth_tech_suppor_tview"
+                android:text="123456789"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_hot_line_tview"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_tech_suppor_tview_value"
+                android:text="客服热线: "
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_hot_line_tview_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@id/auth_tech_suppor_tview_value"
+                android:layout_toRightOf="@id/auth_hot_line_tview"
+                android:text="098765434"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/black"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/auth_detail_tview"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:layout_marginTop="20px"
+                android:scrollbars="vertical"
+                android:layout_below="@id/auth_hot_line_tview_value"
+                android:text="@string/about_content"
+                android:textColor="@color/black"
+                android:textSize="18px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

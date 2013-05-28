@@ -1,0 +1,450 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:id="@+id/main_layout"
+    android:background="@drawable/list_item" >
+
+    <RelativeLayout
+        android:id="@+id/activity_main_banner"
+        android:layout_width="480px"
+        android:layout_height="720px" 
+        > 
+		<RelativeLayout
+			android:id="@+id/activity_main_catalog_layout"
+	        android:layout_width="480px"
+	        android:layout_height="110px" 
+	        android:background="@drawable/activity_main_banner"
+	        > 
+	        <TextView
+	            android:id="@+id/activity_main_title_tview"
+	            android:layout_width="fill_parent"
+	            android:layout_height="60px"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center"
+	            android:text="@string/main_banner"
+	            android:textColor="@android:color/white"
+	            android:textSize="22px" /> 
+	         <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50px"
+	            android:layout_below="@id/activity_main_title_tview" 
+	            >
+	            <TextView
+	                android:id="@+id/tview_item_num"
+	                android:layout_width="70px"
+	                android:layout_height="50px" 
+	                android:gravity="center"
+	                android:text="@string/tview_item_num"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	            <TextView
+	                android:id="@+id/tview_item_name"
+	                android:layout_width="70px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_num"
+	                android:gravity="center"
+	                android:text="@string/tview_item_name"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	            <TextView
+	                android:id="@+id/tview_item_gender"
+	                android:layout_width="50px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_name"
+	                android:gravity="center"
+	                android:text="@string/tview_item_gender"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	            <TextView
+	                android:id="@+id/tview_item_age"
+	                android:layout_width="60px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_gender"
+	                android:gravity="center"
+	                android:text="@string/tview_item_age"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	            <TextView
+	                android:id="@+id/tview_item_anl_status"
+	                android:layout_width="80px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_age"
+	                android:gravity="center"
+	                android:text="@string/tview_item_anl_status"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	            <TextView
+	                android:id="@+id/tview_item_handler_status"
+	                android:layout_width="80px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_anl_status"
+	                android:gravity="center"
+	                android:text="@string/tview_item_handle_status"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	             <TextView
+	                android:id="@+id/tview_item_signature"
+	                android:layout_width="80px"
+	                android:layout_height="50px"
+	                android:layout_toRightOf="@id/tview_item_handler_status"
+	                android:gravity="center"
+	                android:text="@string/tview_item_signature"
+	                android:textColor="@color/ff9900"
+	                android:textSize="18px" 
+	                />
+	        </RelativeLayout>
+	    </RelativeLayout>
+        <ListView
+            android:id="@+id/main_list_view"    
+            android:layout_width="fill_parent"
+            android:layout_height="590px"
+            android:layout_below="@id/activity_main_catalog_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" 
+			android:divider="@null"
+            />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" 
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100px" >
+
+            <RelativeLayout
+                android:id="@+id/btn_r1"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"  
+                > 
+                <ImageButton 
+                    android:id="@+id/img1"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" 
+                    />
+					<ImageView
+	                    android:layout_width="80px" 
+	                    android:layout_height="80px"
+	                    android:layout_centerHorizontal="true"
+	                    android:background="@drawable/kk_checkin" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="客户登记"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_r2"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r1" >
+
+                <ImageButton
+                    android:id="@+id/img2"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" 
+                    />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_analysed" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="已经分析"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_r3"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r2" >
+
+                <ImageButton
+                    android:id="@+id/img3"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_wait_analyse" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="等待分析"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+			<!--  
+            <RelativeLayout
+                android:id="@+id/btn_r4"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r3" >
+
+                <ImageButton
+                    android:id="@+id/img4"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_handle_file" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="处理档案"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+-->
+            <RelativeLayout
+                android:id="@+id/btn_r5"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r3" >
+
+                <ImageButton
+                    android:id="@+id/img5"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_handled" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="已经处理"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+			<RelativeLayout
+                android:id="@+id/btn_r15"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r5" >
+
+                <ImageButton
+                    android:id="@+id/img15"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_searck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_r6"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r15" >
+	
+                <ImageButton
+                    android:id="@+id/img6"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_all_file" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="全部档案"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_r12"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r6" >
+
+                <ImageButton
+                    android:id="@+id/img12"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_consult" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="康客咨询"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_r13"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r12" >
+
+                <ImageButton
+                    android:id="@+id/img13"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_news" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="最新动态"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_r14"
+                android:layout_width="100px"  
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_bg_normal"
+                android:layout_toRightOf="@id/btn_r13" >
+
+                <ImageButton
+                    android:id="@+id/img14"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                       android:layout_centerHorizontal="true"
+                    android:background="@drawable/horizontal_bg" />
+				<ImageView
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kk_setting" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"  
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="@android:color/white"
+                    android:textSize="18px" 
+                    android:layout_marginBottom="5px"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </HorizontalScrollView>
+     <com.szkk.widget.LoadingView
+        android:id="@+id/loading_view_common"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

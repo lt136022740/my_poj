@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="480px"
+    android:layout_height="800px"    
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/register_bg" >
+
+        <TextView
+            android:id="@+id/title_tview"
+            android:layout_width="120px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="账户安全"
+            android:textColor="@color/ff9900"
+            android:layout_marginTop="200px"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/register_tview_opw"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_below="@id/title_tview"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:text="旧  密  码: "
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/register_edit_opw"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_below="@id/title_tview"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/register_tview_pw"
+            android:background="@drawable/edit_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/register_tview_pw"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_opw"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:text="新  密  码: "
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/register_edit_pw"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_opw"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/register_tview_pw"
+            android:background="@drawable/edit_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/register_tview_rpw"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_pw"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:text="重复密码: "
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/register_edit_rpw"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_pw"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/register_tview_rpw"
+            android:background="@drawable/edit_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/btview_tmp"
+            android:layout_width="10px"
+            android:layout_height="1px"
+            android:layout_below="@id/register_edit_zipcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px" />
+
+        <Button
+            android:id="@+id/btn_security_confirm"
+            android:layout_width="100px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_rpw"
+            android:layout_marginTop="15px"
+            android:layout_toLeftOf="@id/btview_tmp"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+7*
+        <Button
+            android:id="@+id/btn_security_close"
+            android:layout_width="100px"
+            android:layout_height="40px"
+            android:layout_below="@id/register_edit_rpw"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@id/btview_tmp"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+    </RelativeLayout>
+	 <com.szkk.widget.LoadingView
+        android:id="@+id/loading_view_common"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

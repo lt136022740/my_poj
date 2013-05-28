@@ -1,0 +1,988 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:id="@+id/main_layout"
+    android:background="@drawable/common_bg"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_must"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:background="@drawable/register_bg" >
+
+            <TextView
+                android:id="@+id/tview_must_fill"
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15px"
+                android:gravity="center"
+                android:text="@string/tview_must_fill"
+                android:textColor="@color/ff9900"
+                android:textSize="22px" />
+
+            <RelativeLayout 
+                android:id="@+id/layout_must_fill"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tview_must_fill"
+                android:layout_marginTop="10px" >
+
+                <TextView
+                    android:id="@+id/tview_customer_name"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_name"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <EditText
+                    android:id="@+id/edit_customer_name"
+                    android:layout_width="140px"
+                    android:layout_height="30px"
+                    android:layout_toRightOf="@id/tview_customer_name"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="center_vertical|left"
+                    android:padding="2px"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/tview_customer_gender"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/edit_customer_name"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_gender"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="150px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/edit_customer_name"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/tview_customer_gender"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="75px"
+                        android:layout_height="30px"
+                        android:button="@drawable/check_box_bg"
+                        android:checked="true"
+                        android:text="男"
+                        android:textColor="@color/black"
+                        android:textSize="15px" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="75px"
+                        android:layout_height="30px"
+                        android:text="女"
+                        android:button="@drawable/check_box_bg"
+                        android:textColor="@color/black"
+                        android:textSize="15px" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tview_customer_age"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/radioGroup"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_age"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <EditText
+                    android:id="@+id/edit_customer_age"
+                    android:layout_width="140px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/radioGroup"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/tview_customer_age"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="center_vertical|left"
+                    android:padding="2px"
+                    android:textColor="@color/black"
+                    android:textSize="18px" 
+                    android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/tview_customer_occupation"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/edit_customer_age"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_occupation"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <Spinner
+                    android:id="@+id/occupation_spinner"
+                    android:layout_width="140px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/edit_customer_age"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@+id/tview_customer_occupation"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_occupation"
+                    />
+
+                <TextView
+                    android:id="@+id/tview_customer_tempature"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/occupation_spinner"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_temperature"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+                <Spinner
+                    android:id="@+id/temperature_spinner"
+                    android:layout_width="140px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/occupation_spinner"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/tview_customer_tempature"
+                    android:background="@drawable/spinner_bg" 
+                    
+                    android:prompt="@string/chose_temperature"/>
+
+                <TextView
+                    android:id="@+id/tview_customer_address"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/temperature_spinner"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"
+                    android:text="@string/tview_customer_address"
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <Spinner
+                    android:id="@+id/address_spinner1"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/temperature_spinner"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/tview_customer_address"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_province"
+                    />
+
+                <Spinner
+                    android:id="@+id/address_spinner2"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/temperature_spinner"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/address_spinner1"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_city"
+                    />
+
+                <Spinner
+                    android:id="@+id/address_spinner3"
+                    android:layout_width="100px"
+                    android:layout_height="30px"  
+                    android:layout_below="@id/temperature_spinner"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/address_spinner2"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_contry"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_option"
+            android:layout_width="fill_parent"
+            android:layout_height="400px"
+            android:layout_below="@id/layout_must"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/register_bg" >
+            <TextView
+                android:id="@+id/tview_option_fill"
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/tview_optional_fill"
+                android:textColor="@color/ff9900"
+                android:textSize="22px" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="90px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_option_fill"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="问诊信息"
+                android:textColor="@color/black"
+                android:textSize="18px" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="90px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_option_fill"
+                android:layout_marginTop="10px"
+                android:layout_toLeftOf="@id/btn2"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="@string/tview_optional_fill"
+                android:textColor="@color/black"
+                android:textSize="18px" 
+                android:layout_marginRight="3px"
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="90px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_option_fill"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@id/btn2"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="体检信息"
+                android:textColor="@color/black"
+                android:textSize="18px" 
+                android:layout_marginLeft="3px"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="240px"
+                android:layout_below="@id/btn3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px" 
+                >
+
+                <TextView
+                    android:id="@+id/tview1"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:gravity="center_vertical"  
+                    android:text="健康病史: "
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="180px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/tview1"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_health_his"
+                    />
+                <TextView
+                    android:id="@+id/tview2"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="45px"
+                    android:gravity="center_vertical"
+                    android:text="居住环境: "
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="180px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="45px"
+                    android:layout_toRightOf="@id/tview2"
+                    android:background="@drawable/spinner_bg" 
+                    android:prompt="@string/chose_environment"
+                    />
+                <!--  -->
+
+                <TextView
+                    android:id="@+id/tview3"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="80px"
+                    android:gravity="center_vertical"
+                    android:text="电子邮件: "
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <EditText
+                    android:id="@+id/edit3"
+                    android:layout_width="180px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="80px"
+                    android:layout_toRightOf="@id/tview3"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="13px" />
+
+                <TextView
+                    android:id="@+id/tview4"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="115px"
+                    android:gravity="center_vertical"
+                    android:text="联系电话: "
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <EditText
+                    android:id="@+id/edit4"
+                    android:layout_width="180px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="115px"
+                    android:layout_toRightOf="@id/tview4"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="18px" 
+                    android:numeric="integer"
+                    />
+                <!--  -->
+
+                <TextView
+                    android:id="@+id/tview5"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="150px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="联系  QQ: "
+                    android:textColor="@color/black"
+                    android:textSize="18px" />
+
+                <EditText
+                    android:id="@+id/edit5"
+                    android:layout_width="180px"
+                    android:layout_height="30px"
+                    android:layout_marginTop="150px"
+                    android:layout_toRightOf="@id/tview5"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="18px" 
+                    android:numeric="integer"
+                    />
+            </RelativeLayout>
+            <!--  -->
+            <RelativeLayout
+                android:id="@+id/layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="240px"
+                android:layout_below="@id/btn3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:visibility="gone"
+                >
+
+                <CheckBox
+                    android:id="@+id/ch1"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:button="@drawable/check_box_bg" />
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/ch1"
+                    android:text="肿瘤史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/ch2"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="50px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="50px"
+                    android:layout_toRightOf="@id/ch2"
+                    android:text="外感发热"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/ch3"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px"
+                    android:layout_toRightOf="@id/ch3"
+                    android:text="手部损伤"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+                <CheckBox
+                    android:id="@+id/ch4"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="130px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="130px"
+                    android:layout_toRightOf="@id/ch4"
+                    android:text="高血压史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/ch5"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="170px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="170px"
+                    android:layout_toRightOf="@id/ch5"
+                    android:text="精神病史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+                <CheckBox
+                    android:id="@+id/ch6"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="170px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="170px"
+                    android:layout_toRightOf="@id/ch6"
+                    android:text="糖尿病史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+                <!--  -->
+
+                <CheckBox
+                    android:id="@+id/ch7"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="10px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="130px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/ch7"
+                    android:text="重大手术史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/ch8"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="50px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="130px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="50px"
+                    android:layout_toRightOf="@id/ch8"
+                    android:text="固定疼痛部位"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/ch9"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="90px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="130px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px"
+                    android:layout_toRightOf="@id/ch9"
+                    android:text="风湿和类风湿史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+                <!--  -->
+
+                <CheckBox
+                    android:id="@+id/ch10"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="130px"
+                    android:button="@drawable/check_box_bg" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="130px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="130px"
+                    android:layout_toRightOf="@id/ch10"
+                    android:text="重大骨折损伤史"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="240px"
+                android:layout_below="@id/btn3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/d3_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="10px"
+                    android:text="舒张压: "
+                    android:textColor="@color/black" 
+                    android:textSize="18px"
+                    />
+
+                <EditText
+                    android:id="@+id/d3_edit1"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/d3_tv1"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                     android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@id/d3_edit1"
+                    android:text="mmHg(Kpa)"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="50px"
+                    android:text="收缩压: "
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <EditText
+                    android:id="@+id/d3_edit2"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="50px"
+                    android:layout_toRightOf="@id/d3_tv2"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                     android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="50px"
+                    android:layout_toRightOf="@id/d3_edit2"
+                    android:text="mmHg(Kpa)"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="90px"
+                    android:text="心    率: "
+                    android:textColor="@color/black"
+                     android:textSize="18px"
+                     />
+
+                <EditText
+                    android:id="@+id/d3_edit3"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px"
+                    android:layout_toRightOf="@id/d3_tv3"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                     android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="90px"
+                    android:layout_toRightOf="@id/d3_edit3"
+                    android:text="次/分"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+                <!--  -->
+
+                <TextView
+                    android:id="@+id/d3_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="130px"
+                    android:text="呼    吸: "
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <EditText
+                    android:id="@+id/d3_edit4"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="130px"
+                    android:layout_toRightOf="@id/d3_tv4"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                     android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="130px"
+                    android:layout_toRightOf="@id/d3_edit4"
+                    android:text="次/分"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="170px"
+                    android:text="身    高: "
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <EditText
+                    android:id="@+id/d3_edit5"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="170px"
+                    android:layout_toRightOf="@id/d3_tv5"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                     android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="170px"
+                    android:layout_toRightOf="@id/d3_edit5"
+                    android:text="cm"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="210px"
+                    android:text="体    重: "
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    />
+
+                <EditText
+                    android:id="@+id/d3_edit6"
+                    android:layout_width="90px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="210px"
+                    android:layout_toRightOf="@id/d3_tv6"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/black" 
+                     android:textSize="18px"
+                    android:numeric="integer"
+                    />
+
+                <TextView
+                    android:id="@+id/d3_tv_unit6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="210px"
+                    android:layout_toRightOf="@id/d3_edit6"
+                    android:text="Kg"
+                    android:textSize="18px"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_option"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="15px"
+            android:background="@drawable/register_bg" >
+
+            <TextView
+                android:id="@+id/tview_get_pic"
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:text="@string/get_pic"
+                android:textColor="@color/ff9900"
+                android:textSize="22px" />
+			<Button
+                android:id="@+id/pic_preview"
+                android:layout_width="120px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_get_pic"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg_common"
+                android:text="查看"
+                android:textColor="@color/black" 
+                android:textSize="18px"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:id="@+id/rotate_left"
+                android:layout_width="120px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_get_pic"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg_common"
+                android:text="顺时针旋转"
+                android:textColor="@color/black" 
+                android:textSize="18px"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/pic_preview"
+                android:layout_marginRight="10px"
+                />
+
+            <Button
+                android:id="@+id/rotate_right"
+                android:layout_width="120px"
+                android:layout_height="40px"
+                android:layout_below="@id/tview_get_pic"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg_common"
+                android:text="逆时针旋转"
+                android:textColor="@color/black" 
+                android:textSize="18px"
+                android:gravity="center"
+                android:layout_toRightOf="@id/pic_preview"
+                android:layout_marginLeft="10px"
+                />
+            <!--  -->
+            <ImageView
+                android:id="@+id/pic_img"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_below="@id/rotate_right"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/questionmark" 
+                android:layout_marginTop="10px"
+                />
+            <!--  -->
+            <Button
+                android:id="@+id/pic_from_dev"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rotate_right"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg_pic_from_dev" />
+
+            <TextView
+                android:id="@+id/pic_from_dev_tv"
+                android:layout_width="60px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_from_dev"
+                android:layout_marginRight="15px"
+                android:gravity="center"
+                android:text="相     机"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+
+            <Button
+                android:id="@+id/pic_from_m"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pic_from_dev_tv"
+                android:layout_marginRight="15px"
+                android:background="@drawable/btn_bg_pic_from_disk" />
+
+            <TextView
+                android:id="@+id/pic_from_mv_tv"
+                android:layout_width="60px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_from_m"
+                android:layout_marginRight="15px"
+                android:gravity="center"
+                android:text="内存卡"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+
+            <Button
+                android:id="@+id/pic_send"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_from_mv_tv"
+                android:layout_marginRight="15px"
+                android:background="@drawable/btn_bg_pic_send" />
+
+            <TextView
+                android:id="@+id/pic_send_tv"
+                android:layout_width="60px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_send"
+                android:layout_marginRight="15px"
+                android:gravity="center"
+                android:text="发     送"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+
+            <Button
+                android:id="@+id/pic_remove"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_send_tv"
+                android:layout_marginRight="15px"
+                android:background="@drawable/btn_bg_pic_clear" />
+
+            <TextView
+                android:id="@+id/pic_remove_tv"
+                android:layout_width="60px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pic_remove"
+                android:layout_marginRight="15px"
+                android:gravity="center"
+                android:text="清      空"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

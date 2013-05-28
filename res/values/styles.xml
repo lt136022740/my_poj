@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="custom_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:keepScreenOn">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+	<style name="message_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:keepScreenOn">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="none_anim_dialog" parent="custom_dialog">
+        <item name="android:windowAnimationStyle">@style/activity_none_animations</item>
+    </style>
+
+    <style name="no_open_anim_dialog" parent="custom_dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+    </style>
+
+    <style name="no_exit_anim_dialog" parent="custom_dialog">
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+     <style name="full_sreen_dialog">
+        <item name="android:windowNoTitle">true</item>    
+   		<item name="android:windowFullscreen">true</item>
+    </style>
+	  
+    <style name="activity_none_animations" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="dim_enable_dialog" parent="custom_dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_activity" parent="dim_enable_dialog">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    
+    <style name="dialog_activity_translucent" parent="custom_dialog">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="alert_dialog" parent="custom_dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/register_bg</item>
+    </style>
+	
+    <style name="custom_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:isScrollContainer">true</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="alert_btn">
+        <item name="android:layout_width">153px</item>
+        <item name="android:layout_height">54px</item>
+        <item name="android:textSize">19px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="loading_large">
+        <item name="android:layout_width">120px</item>
+        <item name="android:layout_height">120px</item>
+    </style>
+
+    <style name="loading_small">
+        <item name="android:layout_width">60px</item>
+        <item name="android:layout_height">60px</item>
+    </style>
+    
+	<style name="main_game_bottom_imgbtn">
+        <item name="android:layout_width">51px</item>
+        <item name="android:layout_height">48px</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="main_game_bottom_txt">
+        <item name="android:shadowColor">#fff7d1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:textSize">16px</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    
+    <style name="items_tip_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    
+     <style name="events_cancel_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="setting_button_text">
+        <item name="android:layout_width">120px</item>
+        <item name="android:layout_height">58px</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/setting_buttong_text</item>
+        <item name="android:textSize">18px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">10px</item>
+    </style>
+    <style name="setting_button_text_good">
+        <item name="android:layout_width">140px</item>
+        <item name="android:layout_height">58px</item>
+        <item name="android:textColor">@color/setting_buttong_text</item>
+        <item name="android:textSize">18px</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="edittext_cancel" parent="android:Theme">  
+        <item name="android:focusableInTouchMode">true</item>  
+    </style>
+</resources>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@android:color/white" >
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layout_left"
+            android:layout_width="480px"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_bg" >
+
+                <TextView
+                    android:id="@+id/layout_title"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:gravity="center"
+                    android:text="基本客户信息"
+                    android:textColor="@color/ff9900"
+                    android:textSize="22px" 
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/detial_tview_num"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/layout_title"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="编        号: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_num_vaue"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/layout_title"
+                    android:layout_toRightOf="@id/detial_tview_num"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_name"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_num_vaue"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="姓        名: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_name_vaue"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_num_vaue"
+                    android:layout_toRightOf="@id/detial_tview_name"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_gender"
+                    android:layout_width="100px "
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_name_vaue"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="性        别: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_gender_vaue"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_name_vaue"
+                    android:layout_toRightOf="@+id/detial_tview_gender"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_age"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_gender_vaue"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="年        龄: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_age_vaue"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_gender_vaue"
+                    android:layout_toRightOf="@id/detial_tview_age"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_occupation"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_age_vaue"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="职        业: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_occupation_value"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_age_vaue"
+                    android:layout_toRightOf="@id/detial_tview_occupation"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_address"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_occupation_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="地        区: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_address_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_occupation_value"
+                    android:layout_toRightOf="@id/detial_tview_address"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_tempra"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_address_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="环境温度: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_tempra_value"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_address_value"
+                    android:layout_toRightOf="@id/detial_tview_tempra"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_sign_date"
+                    android:layout_width="100px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_tempra_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="登记日期: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_sign_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_tempra_value"
+                    android:layout_toRightOf="@id/detial_tview_sign_date"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_file_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_base"
+                android:layout_marginTop="5px"
+                android:background="@drawable/register_bg" >
+
+                <TextView
+                    android:id="@+id/file_status_title"
+                    android:layout_width="120px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="当前档案状态"
+                    android:textColor="@color/ff9900"
+                    android:textSize="22px" 
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyze_status"
+                    android:layout_width="115px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/file_status_title"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="分  析  状  态:"
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyze_status_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/file_status_title"
+                    android:layout_toRightOf="@id/detial_tview_analyze_status"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyze_date"
+                    android:layout_width="115px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyze_status_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="分析    日期:"
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyze_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyze_status_value"
+                    android:layout_toRightOf="@id/detial_tview_analyze_date"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyzer_sign"
+                    android:layout_width="115px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyze_date_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="分析师签名: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_analyzer_sign_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyze_date_value"
+                    android:layout_toRightOf="@id/detial_tview_analyzer_sign"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_handle_status"
+                    android:layout_width="115px"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyzer_sign_value"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="处理    状态: "
+                    android:textColor="@color/c333333"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/detial_tview_handle_status_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30px"
+                    android:layout_below="@id/detial_tview_analyzer_sign_value"
+                    android:layout_toRightOf="@id/detial_tview_handle_status"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_file_status"
+            android:layout_width="480px"
+            android:layout_height="480px"
+            android:layout_below="@id/layout_left"
+            android:layout_marginTop="10px"
+            android:background="@drawable/register_bg" >
+
+            <ImageView
+                android:id="@+id/icon_imgview"
+                android:layout_width="380px"
+                android:layout_height="380px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/questionmark" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:id="@+id/main_layout"
+    android:background="@drawable/list_item" >
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="800px" 
+        >
+        <TextView
+            android:layout_width="400px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200px"
+            android:gravity="center"
+            android:text="手道康" 
+            android:textColor="@color/black"
+            android:textSize="40px" />
+
+        <RelativeLayout
+            android:id="@+id/layout_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="100px"
+                android:layout_height="40px"
+                android:gravity="center_vertical"
+                android:text="用户名: "
+                android:textColor="@color/black"
+                android:textSize="18px" />
+
+            <EditText
+                android:id="@+id/account_edit"
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:layout_toRightOf="@id/login"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18px" 
+                android:numeric="integer"/>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="100px"
+                android:layout_height="40px"
+                android:layout_below="@id/account_edit"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:text="密   码: "
+                android:textColor="@color/black"
+                android:textSize="18px" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:layout_below="@id/account_edit"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@id/password"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18px" />
+			<TextView
+                android:id="@+id/empty"
+                android:layout_width="20px"
+                android:layout_height="40px"
+                android:layout_below="@id/edit_password"
+                android:layout_marginTop="10px" 
+                android:layout_centerHorizontal="true"
+				android:background="@android:color/transparent"                
+                />
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="100px"
+                android:layout_height="40px"
+                android:layout_below="@id/edit_password"
+                android:layout_marginTop="15px"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="登   陆"
+                android:textColor="@color/black"
+                android:textSize="18px"
+                android:layout_toLeftOf="@id/empty"
+                 />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="100px"
+                android:layout_height="40px"
+                android:layout_below="@id/edit_password"
+                android:layout_marginTop="15px"
+                android:background="@drawable/btn_bg_common"
+                android:gravity="center"
+                android:text="申请康客" 
+                android:textColor="@color/black"
+                android:textSize="18px" 
+                android:layout_toRightOf="@id/empty"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/find_pw_btn"
+            android:layout_width="80px"
+            android:layout_height="30px"
+            android:layout_below="@id/layout_register"
+            android:layout_marginTop="15px"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="找回密码"  
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="15px" />
+    </RelativeLayout>
+    <com.szkk.widget.LoadingView
+        android:id="@+id/loading_view_common"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="400px"
+    android:layout_height="330px"
+    >
+
+    <RelativeLayout
+        android:layout_width="400px"
+        android:layout_height="330px"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/title_tview"
+            android:layout_width="270px"
+            android:layout_height="35px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="提    示"
+            android:textColor="@color/ff9900"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/content_tview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23px" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="100px"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="70px"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="100px"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="70px"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+    </RelativeLayout>
+
+</RelativeLayout>

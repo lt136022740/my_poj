@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="480px"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg" >
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/register_bg" 
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="480px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="按条件搜索"
+            android:textColor="@color/ff9900"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/kk_search_by_num_tview"
+            android:layout_width="110px"
+            android:layout_height="30px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="50px"
+            android:gravity="center_vertical"
+            android:text="按编号:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <EditText
+            android:id="@+id/kk_search_by_num_edit"
+            android:layout_width="140px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@id/kk_search_by_num_tview"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:numeric="integer"
+            />
+
+        <TextView
+            android:id="@+id/kk_search_by_name_tview"
+            android:layout_width="110px"
+            android:layout_height="30px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="90px"
+            android:gravity="center_vertical"
+            android:text="按姓名:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <EditText
+            android:id="@+id/kk_search_by_name_edit"
+            android:layout_width="140px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="90px"
+            android:layout_toRightOf="@id/kk_search_by_name_tview"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/kk_search_by_gender_tview"
+            android:layout_width="110px"
+            android:layout_height="30px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="130px"
+            android:gravity="center_vertical"
+            android:text="按性别:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="150px"
+            android:layout_height="30px"
+            android:layout_below="@id/edit_customer_name"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="130px"
+            android:layout_toRightOf="@id/kk_search_by_gender_tview"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="75px"
+                android:layout_height="30px"
+                android:button="@drawable/check_box_bg"
+                android:checked="true"
+                android:text="男"
+                android:textColor="@color/black"
+                android:textSize="15px" >
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="75px"
+                android:layout_height="30px"
+                android:button="@drawable/check_box_bg"
+                android:text="女"
+                android:textColor="@color/black"
+                android:textSize="15px" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/kk_search_by_age_tview"
+            android:layout_width="110px"
+            android:layout_height="30px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="170px"
+            android:gravity="center_vertical"
+            android:text="按年龄:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+
+        <EditText
+            android:id="@+id/kk_search_by_age_edit"
+            android:layout_width="140px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="170px"
+            android:layout_toRightOf="@id/kk_search_by_age_tview"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:numeric="integer"
+            />
+        <!-- 时间一 -->
+		 <TextView
+            android:id="@+id/kk_search_by_sign_date_tview"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="210px"
+            android:gravity="center_vertical"
+            android:text="按登记日期:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+        <Button
+            android:id="@+id/kk_search_by_sign_date_btn"
+            android:layout_width="140px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="210px"
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_common"
+            android:textColor="@color/black"
+            android:textSize="17px"
+            android:text="起始时间"
+            />
+        <TextView
+            android:id="@+id/tview_zhi1"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_marginTop="250px"
+            android:gravity="center_vertical"
+            android:text="至: "
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview"
+            />
+        <Button
+            android:id="@+id/kk_search_by_sign_date_btn2"
+            android:layout_width="140px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="290px"
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_common"
+            android:textColor="@color/black"
+            android:textSize="17px"
+            android:text="终止时间"
+            />
+        <!-- 时间一 -->
+        
+        <!-- 时间er -->
+		 <TextView
+            android:id="@+id/kk_search_by_sign_date_tview2"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="370px"
+            android:gravity="center_vertical"
+            android:text="按分析日期:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+        <Button
+            android:id="@+id/kk_search_by_analyse_date_btn"
+            android:layout_width="140px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="370px"
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17px"
+            android:background="@drawable/btn_bg_common"
+            android:text="起始时间"
+            />
+        <TextView
+            android:id="@+id/tview_zhi2"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_marginTop="410px"
+            android:gravity="center_vertical"
+            android:text="至: "
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview2"
+            />
+        <Button
+            android:id="@+id/kk_search_by_analyse_date_btn2"
+            android:layout_width="140px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="450px"
+            android:layout_toRightOf="@id/kk_search_by_sign_date_tview2"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_common"
+            android:textColor="@color/black"
+            android:textSize="17px"
+            android:text="终止时间"
+            />
+        <!-- 时间er -->
+        
+        <TextView
+            android:id="@+id/kk_search_by_option_tview"
+            android:layout_width="110px"
+            android:layout_height="30px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="530px"
+            android:gravity="center_vertical"
+            android:text="按类型:"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+        <!-- 
+		<CheckBox
+            android:id="@+id/kk_search_by_option_cb_analysed"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="530px"
+            android:layout_toRightOf="@id/kk_search_by_option_tview"
+            android:gravity="center"
+            android:button="@drawable/check_box_bg"
+            />
+        <TextView
+            android:id="@+id/kk_search_by_option_tview_analysed"
+            android:layout_width="70px"
+            android:layout_height="30px"
+            android:layout_marginTop="530px"
+            android:layout_marginLeft="5px"
+            android:gravity="center_vertical"
+            android:text="已分析"   
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:layout_toRightOf="@id/kk_search_by_option_cb_analysed"
+            />
+        <CheckBox
+            android:id="@+id/kk_search_by_option_cb_handled"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="570px"
+            android:layout_toRightOf="@id/kk_search_by_option_tview"
+            android:gravity="center"
+            android:button="@drawable/check_box_bg"
+            />
+        <TextView
+            android:id="@+id/kk_search_by_option_tview_handled"
+            android:layout_width="70px"
+            android:layout_height="30px"
+            android:layout_marginTop="570px"
+            android:layout_marginLeft="5px"
+            android:gravity="center_vertical"
+            android:text="已处理"
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:layout_toRightOf="@id/kk_search_by_option_cb_handled"
+            />
+        <CheckBox
+            android:id="@+id/kk_search_by_option_cb_nothandled"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="610px"
+            android:layout_toRightOf="@id/kk_search_by_option_tview"
+            android:gravity="center"
+            android:button="@drawable/check_box_bg"
+            />
+        <TextView
+            android:id="@+id/kk_search_by_option_tview_nothandled"
+            android:layout_width="70px"
+            android:layout_height="30px"
+            android:layout_marginTop="610px"
+            android:layout_marginLeft="5px"   
+            android:gravity="center_vertical"
+            android:text="未分析"
+            android:textColor="@color/black"
+            android:textSize="18px" 
+            android:layout_toRightOf="@id/kk_search_by_option_cb_nothandled"
+            />
+        -->
+        <RadioGroup
+            android:id="@+id/search_by_type_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_below="@id/kk_search_by_option_tview"       
+            android:layout_centerHorizontal="true" 
+            >
+
+            <RadioButton    
+                android:id="@+id/type_analysed" 
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:button="@drawable/check_box_bg"
+                android:checked="true"
+                android:text="已分析"
+                android:textColor="@color/black"
+                android:textSize="15px" >
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/type_handled"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:button="@drawable/check_box_bg"
+                android:text="已处理"
+                android:layout_marginTop="10px"
+                android:textColor="@color/black"
+                android:textSize="15px" >     
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/type_not_analysed"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:button="@drawable/check_box_bg"
+                android:text="未分析"
+                android:textColor="@color/black"
+                android:layout_marginTop="10px"
+                android:textSize="15px" >
+            </RadioButton>
+        </RadioGroup>
+        
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="110px"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/btn_bg_common"
+            android:gravity="center"
+            android:text="确  定"
+            android:textColor="@color/black"
+            android:textSize="18px" />
+    </RelativeLayout>
+</RelativeLayout>
